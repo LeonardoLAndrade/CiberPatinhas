@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiberPatinhas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="cls-menu" class="cls-menu" aria-label="Fechar menu" role="button">
+    <label for="cls-menu" class="cls-menu-label" title="fechar menu"></label>
+    <aside class="header">
+        <h1 onclick="getElementById('cls-menu').checked = false;">
+            <a href="#inicio">CiberPatinhas</a>
+        </h1>
+        <nav>
+            <ul onclick="getElementById('cls-menu').checked = false;">
+                <li>
+                    <h2><a href="#inicio">Início</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#quem-somos">Quem Somos?</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#bot">Bot</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#ongs">ONG's Parceiras</a></h2>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div class="blue-bg">
+
+        <section id="inicio" class="section">
+            <div class="main-content">
+                <h1>SEJA MUITO BEM-VINDO(A) AO <span class="projeto"><u>PROJETO CIBERPATINHAS</u></span></h1>
+                <div class="logo-img">
+                    <img class="img-abs" src="./assets/img/CiberPatinhas.png">
+                </div>
+                <div class="txt">
+                    <h2>Uma iniciativa dedicada a empregar a tecnologia em prol do bem-estar animal!</h2>
+                    <p>Nosso projeto, iniciado com o objetivo de <strong>criar um chatbot inovador</strong>, visa
+                        auxiliar ONG's dedicadas aos animais. O chatbot não apenas simplificará processos para essas
+                        organizações, mas também desempenhará um papel fundamental na <strong>conscientização e defesa
+                            da causa animal</strong>.</p>
+                    <p>Acreditamos que a combinação única de <strong>inovação tecnológica</strong> e
+                        <strong>compaixão</strong> pode trazer mudanças significativas.
+                    </p>
+                    <p>Junte-se a nós nesta jornada, enquanto avançamos para um futuro onde as patinhas digitais moldam
+                        um mundo mais compassivo para nossos amiguinhos de quatro patas!</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="quem-somos" class="section">
+            <div class="main-content">
+                <h1 class="tt-qs">QUEM SOMOS?</h1>
+                <div class="lt-txt">
+                    <p>Somos a equipe "CiberPatinhas", uma iniciativa apaixonada nascida nos corredores da Fasipe
+                        Cuiabá. Movidos pela inovação e guiados pela compaixão, nosso projeto ganhou vida como uma ideia
+                        vibrante dentro dos projetos acadêmicos da faculdade. Aqui, unimos forças para ir além das salas
+                        de aula e criar um impacto real no bem-estar animal.</p>
+                    <p>Vindos diretamente da vibrante comunidade acadêmica da Fasipe Cuiabá, nossa equipe é composta por
+                        membros dedicados, cada um contribuindo com sua paixão e conhecimento. Estamos comprometidos com
+                        a missão de <strong>criar um chatbot inovador para auxiliar ONGs dedicadas aos animais e
+                            promover ativamente a conscientização para a causa animal.</strong></p>
+                    <p>Convidamos você a se juntar a nós nessa jornada que começou como um projeto acadêmico e agora
+                        cresce como uma força comprometida com a melhoria da vida dos nossos amigos de quatro patas.
+                        Seja parte dessa história em constante evolução!</p>
+                </div>
+            </div>
+            <div class="fasipe">
+                <img class="img-abs" src="./assets/img/fasipe.png">
+            </div>
+            <div class="animals">
+                <img class="img-abs" src="./assets/img/cutes.png">
+            </div>
+        </section>
+
+    </div>
+
+
+    <section id="bot" class="section white-bg">
+        <div class="tt-bot">
+            <h1 class="tt-bot">CONHEÇA O BOT!<h1>
+        </div>
+        <div class="main-content">
+        <div class="side">
+            <div class="sct-bot-img">
+                <img class="img-abs" src="./assets/img/botcodg.png">
+            </div>
+            <div class="cnt-bot">
+                <p>Olá, amigos e amantes dos animais! 🐶🐱</p><br>
+                <p>Eu sou o Peter! O seu assistente digital dedicado a promover a
+                    adoção responsável e o bem-estar dos nossos amiguinhos! 🤖</p><br>
+                <p>Com a minha equipe apaixonada por pets,
+                    estamos aqui para ajudar você a encontrar informações sobre ONGs de cuidados
+                    com animais, fornecer dicas úteis sobre cuidados e saúde, e até mesmo ajudar a encontrar o
+                    companheirinho perfeito para sua família. 🏡</p><br>
+                <p>Juntos, vamos espalhar o amor e fazer a diferença na vida dos
+                    animais necessitados! 🐾💙</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="ongs" class="section yellow-bg">
+        <div class="main-content">
+            <h1 class="tt-op"><u>ONG'S PARCEIRAS</u></h1>
+            <div class="dtls">
+                <h3 onclick="
+                if (getElementById('ong1').open == false & getElementById('ong2').open == false){
+                    getElementById('ong1').open = true; 
+                    getElementById('ong2').open = true;
+                } else {
+                    getElementById('ong1').open = false; 
+                    getElementById('ong2').open = false;
+                }
+                ">Clique para saber mais!</h3>
+                <details id="ong1">
+                    <summary>
+                        <h1>É O BICHO MT</h1>
+                    </summary>
+                    <div class="bg">
+                        <p>A associação É o Bicho MT! nasceu no ano de 2015, por meio da união de um grupo de amigos
+                            dedicados à causa animal, possuindo como objetivo inicial a proteção dos animais domésticos
+                            em situação de vulnerabilidade, vítimas de abandono ou maus-tratos, mais especificamente
+                            cães e gatos de Cuiabá/MT.</p>
+                        <p>A partir do ano de 2020, a associação teve a sua área de atuação ampliada, voltando-se
+                            também aos animais da fauna silvestre mato-grossense, com destaque para o Pantanal, passando
+                            a desenvolver ações simultâneas para o atendimento tanto das necessidades dos animais
+                            domésticos, quanto dos animais silvestres.</p>
+                        <p>O grupo se constituiu formalmente como associação em 2021, sendo atualmente a diretoria
+                            integrada por 8 (oito) mulheres voluntárias, que assumem responsabilidades legais frente às
+                            ações desenvolvidas pela É o Bicho MT! O trabalho da associação é todo custeado por meio de
+                            doações de parceiros, empresas, pessoas físicas e por meio de campanhas de arrecadação e
+                            vendas de produtos</p>
+                    </div>
+                </details>
+                <details id="ong2">
+                    <summary>
+                        <h1>PROJETO LUNAAR</h1>
+                    </summary>
+                    <div class="bg">
+                        <p>O Projeto LUNAAR – Luta e União de Amigos para Animais em Risco nasceu em outubro de 2017
+                            quando Tainá Marques, acadêmica de Nutrição da UFMT – Universidade Federal de Mato Grosso,
+                            reuniu amigos, estudantes, familiares em um grupo de conversas via celular com o intuito de
+                            amparar aproximadamente 800 gatos, entre filhotes e adultos, que vivem nas áreas das
+                            faculdades da UFMT.</p>
+                        <p>Procurando uma alternativa que aproximasse o projeto e a sociedade, criaram uma campanha
+                            para arrecadar a custo zero frascos vazios de desodorante em aerosol, produtos feitos em
+                            alumínio e descartados após o uso. Desta forma ao evitar que esses materiais entrem em
+                            contato com a natureza o doador protege o meio ambiente e salva vidas dos animais atendidos
+                            pelo projeto.</p>
+                        <p>Hoje o projeto atua com 40 voluntários, 54 pontos de coleta de frascos vazios de
+                            desodorantes e conta agora também com o Pantanal como primeiro shopping com ponto de coleta.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <div class="bot">
+        <img src="./assets/img/bot.svg" class="bot-img">
+    </div>
+    <div class="chat">
+        <div class="nome-bot">
+            <h1>Peter</h1>
+        </div>
+        <div class="bot-msg">
+            <p class="msg-recebida">Olá! Eu sou o Assistente <br> Virtual da CiberPatinhas! <br>🤖🐾<br><br>
+
+                Como eu posso te ajudar hoje?</p>
+            <div class="sprt">
+                <p>Adoção</p>
+            </div>
+            <div class="sprt">
+                <p>Apadrinhe um pet</p>
+            </div>
+            <div class="sprt">
+                <p>Doação</p>
+            </div>
+            <div class="sprt">
+                <p>ONG's participantes</p>
+            </div>
+
+            <div class="rst">
+
+            </div>
+            <div class="opt1">
+
+                <div class="msg-recebida">
+                    <p>Olá! 🐶🐱<br><br>
+                        Se você está pensando em adotar um amiguinho, confira essas ONG's incríveis:<br><br>
+
+                        <strong>É o Bicho - Adote amor e alegria!</strong> 🐾<br>
+                        <em><a href="//docs.google.com/forms/d/e/1FAIpQLSejXnvjJ6eqYsB7Lewy3Vq8VsC2RDghUJZpTPp_BbT05vzdpg/viewform"
+                                target="_blank">
+                                Clique aqui!</a></em>
+                        <br><br>
+                        <strong>Projeto Lunaar - Faça a diferença na vida de um pet.</strong> 🏡<br>
+                        <em><a href="https://api.whatsapp.com/send?phone=5565992701706&text=Ol%C3%A1,%20eu%20quero%20adotar!%20"
+                                target="_blank">
+                                Clique aqui!</a></em>
+                        <br><br>
+                        Adotar é um gesto maravilhoso! <br>Se precisar de mais informações, estou aqui para te ajudar.
+                        🐕🐈
+                    </p>
+                </div>
+            </div>
+
+            <div class="opt2">
+                <div class="msg-recebida">
+                    <p>Olá! 🐱❤️🐶<br><br>
+                        Apadrinhar um pet é um gesto incrível de solidariedade!<br><br>
+                        Ao se tornar padrinho ou madrinha, você ajuda financeiramente um animal em necessidade.
+                        💌<br><br>
+
+                        Para apadrinhar um amigo peludinho através do <strong>Projeto Lunaar</strong>:
+                        <em><a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808487b565700187b58b8d5a000e"
+                                target="_blank">
+                                Clique aqui!</a></em><br><br>
+
+                        Juntos, podemos fazer a diferença na vida desses animais. 🏡💕
+                    </p>
+                </div>
+            </div>
+            <div class="opt3">
+                <div class="msg-recebida">
+                    <p>Olá! 🐱🐾<br><br>
+                        Seja parte da mudança e faça a diferença na vida dos animais! <br><br>
+                        Suas doações são essenciais para apoiar as ONGs que trabalham incansavelmente por eles!
+                        🫶<br><br>
+
+                        <strong>Para doar à ONG "É o Bicho":</strong><br>
+                        Chave Pix -> <br>CNPJ: 42.442.070/0001-40 <br><br>
+
+                        <strong>Para doar à ONG "Projeto Lunaar":</strong><br>
+                        Chave Pix -> <br>CNPJ: 39.469.916/0001-20 <br><br>
+
+                        Cada contribuição conta! Juntos, podemos proporcionar um futuro melhor para
+                        nossos amiguinhos de quatro patas. ❤️🐶
+                    </p>
+                </div>
+            </div>
+            <div class="opt4">
+                <div class="sprt">
+                    <p>É o Bicho</p>
+                </div>
+                <div class="sprt">
+                    <p>Projeto Lunaar</p>
+                </div>
+            </div>
+            <div class="rst2">
+
+            </div>
+            <div class="opt4-1">
+                <div class="msg-recebida">
+                    <p>A <strong>É o Bicho MT</strong>! surgiu em 2015, inicialmente focada em proteger cães e gatos
+                        em situação de vulnerabilidade, vítimas de abandono ou maus-tratos em Cuiabá/MT. <br><br>
+                        Em 2020, expandiram para incluir animais silvestres e formalizaram-se como
+                        associação em 2021. <br><br>A diretoria, composta por oito voluntárias, financia suas
+                        ações por meio de doações e campanhas. 🐾💙</p>
+                </div>
+            </div>
+            <div class="opt4-2">
+                <div class="msg-recebida">
+                    <p>O <strong>Projeto LUNAAR</strong> - Luta e União de Amigos para Animais em Risco nasceu em outubro
+                        de 2017, liderado por Tainá Marques, estudante de Nutrição da UFMT. <br><br>O foco inicial
+                        era ajudar cerca de 800 gatos nas áreas das faculdades da UFMT. <br> Criaram uma
+                        campanha inovadora, arrecadando frascos vazios de desodorantes em aerosol,
+                        protegendo o meio ambiente e auxiliando os animais. <br><br>Com 40 voluntários e 54 pontos
+                        de coleta, o projeto expandiu para incluir o Pantanal como seu primeiro shopping
+                        com ponto de coleta. 🐾💙</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="campo-envio-msg">
+            <input type="text" placeholder="Escreva sua mensagem..." class="input-campo">
+            <h1 id="send">></h1>
+        </div> -->
+    </div>
+    </div>
+    
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
